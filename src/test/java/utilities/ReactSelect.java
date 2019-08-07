@@ -22,10 +22,17 @@ public class ReactSelect {
 		element.click();
 		Thread.sleep(2000);
 		List<WebElement> options = element.findElements(By.xpath("//*[contains(@class,'option')]"));
+		return options;
+	}
+
+	public void printOptions() throws InterruptedException {
+
+		element.click();
+		Thread.sleep(2000);
+		List<WebElement> options = element.findElements(By.xpath("//*[contains(@class,'option')]"));
 		for (WebElement e : options) {
 			System.out.println(e.getText());
 		}
-		return options;
 	}
 
 	public void selectByIndex(int index) throws InterruptedException {
@@ -44,7 +51,7 @@ public class ReactSelect {
 		List<WebElement> options = element.findElements(By.xpath("//*[contains(@class,'option')]"));
 		for (WebElement e : options) {
 			if (e.getText().equalsIgnoreCase(value)) {
-				System.out.println(e.getText());
+				System.out.println("Selecting option: " + e.getText());
 				e.click();
 				break;
 			}

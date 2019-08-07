@@ -37,8 +37,9 @@ public class DemoTest extends BaseTest {
 		driver.get("http://localhost:3000/");
 		WebDriverWait wait = new WebDriverWait(driver, 120);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("select-countries")));
-		ReactSelect countries = new ReactSelect(driver.findElement(By.xpath("//div[@id='select-countries']")));
+		ReactSelect countries = new ReactSelect(driver.findElement(By.xpath("//div[@id='select-countries']/div")));
 		countries.selectByValue("India");
+		System.out.println("Count of country list: " +countries.getOptions().size());
 		Thread.sleep(6000);
 	}
 

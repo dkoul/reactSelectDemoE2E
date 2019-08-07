@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20823" started-at="2019-07-10T07:06:10Z" finished-at="2019-07-10T07:06:31Z">
+  <suite name="Default suite" duration-ms="15142" started-at="2019-08-07T13:29:40Z" finished-at="2019-08-07T13:29:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20823" started-at="2019-07-10T07:06:10Z" finished-at="2019-07-10T07:06:31Z">
+    <test name="Default test" duration-ms="15142" started-at="2019-08-07T13:29:40Z" finished-at="2019-08-07T13:29:55Z">
       <class name="tests.DemoTest">
-        <test-method status="PASS" signature="chosenDemoWithLocalEnv()[pri:0, instance:tests.DemoTest@58651fd0]" name="chosenDemoWithLocalEnv" duration-ms="20715" started-at="2019-07-10T12:36:10Z" finished-at="2019-07-10T12:36:31Z">
+        <test-method status="PASS" signature="reactSelectDemo()[pri:0, instance:tests.DemoTest@58651fd0]" name="reactSelectDemo" duration-ms="15045" started-at="2019-08-07T18:59:40Z" finished-at="2019-08-07T18:59:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- chosenDemoWithLocalEnv -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.DemoTest@58651fd0]" name="teardown" is-config="true" duration-ms="85" started-at="2019-07-10T12:36:31Z" finished-at="2019-07-10T12:36:31Z">
+        </test-method> <!-- reactSelectDemo -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.DemoTest@58651fd0]" name="teardown" is-config="true" duration-ms="76" started-at="2019-08-07T18:59:55Z" finished-at="2019-08-07T18:59:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

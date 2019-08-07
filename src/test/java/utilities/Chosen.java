@@ -33,7 +33,7 @@ public class Chosen {
 		element.click();
 		Thread.sleep(2000);
 		List<WebElement> options = element.findElements(By.className("active-result"));
-		System.out.println("Selecting option: " + options.get(index).getText());
+		System.out.println("Selecting option: " + options.get(index).getText());              
 		options.get(index).click();
 
 	}
@@ -46,6 +46,7 @@ public class Chosen {
 		for (WebElement e : options) {
 			if (e.getText().equalsIgnoreCase(value)) {
 				e.click();
+				System.out.println("Selecting option: " + e.getText()); 
 				break;
 			}
 		}
